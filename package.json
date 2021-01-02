@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-		"start": "ng serve --host 127.0.0.1 --port 8080",
-		"start-prod": "ng serve --host 127.0.0.1 --port 8080 -prod",
+    "start": "ng serve --host 127.0.0.1 --port 8080",
+    "start-prod": "ng serve --host 127.0.0.1 --port 8080 -prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -20,6 +20,7 @@
     "@angular/platform-browser": "~11.0.5",
     "@angular/platform-browser-dynamic": "~11.0.5",
     "@angular/router": "~11.0.5",
+    "angular-in-memory-web-api": "^0.11.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
