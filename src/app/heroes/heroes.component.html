@@ -1,13 +1,14 @@
 <h2>つよつよおじさん</h2>
 <ul class="heroes">
-	<li *ngFor="let hero of heroes; let i = index" [class.selected]="hero == selectedHero" (click)="onSelect(hero)">
-		<span class="badge">{{ spacePadding(hero.rank) }}</span> <span class="ngo-rate">{{hero.rate}}</span> <span
-			class="ngo-name">{{hero.name}}</span>
-
+	<li *ngFor="let hero of heroes; let i = index">
+		<a routerLink="/detail/{{hero.id}}">
+			<span class="badge">{{ spacePadding(hero.rank) }}</span> <span class="ngo-rate">{{hero.rate}}</span> <span
+				class="ngo-name">{{hero.name}}</span>
+		</a>
 	</li>
 </ul>
 
 <br>
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
 
 <br>

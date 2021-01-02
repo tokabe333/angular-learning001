@@ -18,4 +18,11 @@ export class HeroService {
 		this.messageService.add("TsuyoTsuyo Service: fetched ojisans");
 		return of(HEROES);
 	}
+
+	getHero(id: number): Observable<Hero> {
+		this.messageService.add(`HeroService: fetched hero id=${id}`);
+		let f = HEROES.find(hero => hero.id == id);
+		if (f == null) { alert("ngo"); return of(new Hero()); };
+		return of(f);
+	}
 }
