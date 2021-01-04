@@ -6,11 +6,12 @@
     "start": "ng serve --host 127.0.0.1 --port 8080",
     "start-prod": "ng serve --host 127.0.0.1 --port 8080 -prod",
 		"build": "ng build",
-		"build-prod": "ng build --output-path ~/games/HoshideCompany/static --prod --watch",
+		"build-prod": "ng build --output-path ~/games/HoshideCompany/static --prod --watch && mv ~/games/HoshideCompany/static/index.html ~/games/HoshideCompany/templates/AIbattle/.html",
 		"build-unchi": "ng build --output-path C:/Users/tokab/Downloads/unchici --prod --watch",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+		"e2e": "ng e2e",
+		"unchi": "ng build && ng build --prod"
   },
   "private": true,
   "dependencies": {
